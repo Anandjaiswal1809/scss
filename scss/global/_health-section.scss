@@ -1,0 +1,38 @@
+.health-section {
+    position: relative;
+
+    .small-title {
+        width: 100%;
+        margin-top: 38px;
+        color: #282832;
+
+        span{
+            color: #7E7E84;
+        }
+    }
+
+    .good {
+        text-align: center;
+        font-size: 66px;
+        margin-top: 41px;
+        line-height: 128%;
+
+        @include mq($until: tablet) {
+            font-size: 36px;
+        }
+    }
+
+
+
+    .details {
+        width: 100%;
+        margin: 0% auto;
+        text-align: center;
+        max-width: 794px;
+        font-size: 20px;
+        line-height: 138%;
+        color: #7E7E84;
+        margin-top: 29px;
+    }
+}
+

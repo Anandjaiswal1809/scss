@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>footer</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <footer class="footer">
+        <div class="container">
+            <img src="img/logo-white.svg">
+            <div class="choose-foot">Choose better</div>
+        </div>
+        <div class="container">
+            <!-- collapse-->
+            <div class="accordion-container">
+                <div class="accordion-block">
+                    <div>
+                        <div class="custom-accordion-title">
+                            <span class="title-text font-16px">Get in contact</span>
+                            <i class="icon icon-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="custom-accordion-content">
+                        <div class="post_content">
+                            <ul class="footer-menu">
+                                <li><a href="#">0207 043 0716</a></li>
+                                <li><a href="#">customercare@treated.com</a></li>
+                                <li><a href="#">Instagram</a></li>
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Twitter</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-block">
+                    <div>
+                        <div class="custom-accordion-title">
+                            <span class="title-text font-16px">Our treatments</span>
+                            <i class="icon icon-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="custom-accordion-content">
+                        <div class="post_content">
+                            <ul class="footer-menu">
+                                <li><a href="#">Male health</a></li>
+                                <li><a href="#">Female health</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Erectile dysfunction</a></li>
+                                <li><a href="#">Hair loss</a></li>
+                                <li><a href="#">Quit smoking</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-block">
+                    <div>
+                        <div class="custom-accordion-title">
+                            <span class="title-text font-16px">Our services</span>
+                            <i class="icon icon-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="custom-accordion-content">
+                        <div class="post_content">
+                            <ul class="footer-menu">
+                                <li><a href="#">About Treated</a></li>
+                                <li><a href="#">Buying medicine online safely</a></li>
+                                <li><a href="#">NHS services we provide</a></li>
+                                <li><a href="#">Our policies</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="accordion-block">
+                    <div>
+                        <div class="custom-accordion-title">
+                            <span class="title-text font-16px">Useful links</span>
+                           
+                        </div>
+                    </div>
+                    <div class="custom-accordion-content">
+                        <div class="post_content">
+                            <ul class="footer-menu">
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Ask us a question</a></li>
+                                <li><a href="#">Patient account</a></li>
+                                <li><a href="#">Report a problem</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container agreement-container">
+            <div class="agreement">
+                <div class="mb-10">HR Healthcare Ltd. Unit 18, Britannia Way, Waters Meeting, Bolton, BL2 2HH VAT: GB
+                    275 6735 64, GPhC:
+                    9010946</div>
+                <div>This domain is licensed under an agreement with HR Healthcare Ltd.</div>
+            </div>
+            <div class="nhs">
+                <div>
+                    <img src="img/nhs.png">
+                    <img src="img/pharmacy.png" class="float-right mt-25">
+                </div>
+                <div class="cq">
+                    <div class="top-cq">
+                        <div><img src="img/CQC-logo.svg"></div>
+                        <div class="rating-title">
+                            <div class="co">CQC overall rating</div>
+
+                            <div class="rating">
+                                <div class="rate1"></div>
+                                <div class="good-text">Good</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-cq">
+                        <div class="hrltd">HR Healthcare Ltd</div>
+                        <div class="inspection">
+                            <div>Latest inspection:</div>
+                            <div>20 May 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+<script>
+    $(".custom-accordion-title").on("click", function () {
+        if ($(this).hasClass('t-open')) {
+            $(this).removeClass('t-open');
+            $(this).parent().next().slideUp(500);
+        } else {
+            $(".custom-accordion-title").removeClass('t-open');
+            $(".custom-accordion-content").slideUp(350);
+            $(this).toggleClass('t-open');
+            $(this).parent().next().slideToggle(500);
+        }
+    });
+</script>
+
+
+
+
+
+
+</html>
