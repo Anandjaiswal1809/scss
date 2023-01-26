@@ -1,0 +1,111 @@
+.recent{
+    position: relative;
+
+    .section-recent {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 78px;
+
+        .most-title {
+            font-size: 24px;
+            line-height: 27px;
+            color: #282832;
+            font-weight: 700;
+        }
+
+        .filter {
+            font-weight: 400;
+            font-size: 18px;
+        }
+    }
+
+    .section-most-recent {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        align-items: center;
+        flex-flow: wrap;
+
+        .card{
+            &.card1{
+            padding: 10px;
+            border-radius: 10px;
+            height: 315px;
+            flex: 0 0 50%;
+            max-width: 50%;
+            height: auto;
+            // @media screen and (max-width:768px) {
+            //     max-width:100%;
+            //     flex: 0 0 100%;
+            // }
+
+            @include mq($until: tablet) {
+                max-width:100%;
+                flex: 0 0 100%;
+            }
+            //  @include mq($from: tablet) {
+            //     max-width:100%;
+            //   flex: 0 0 100%;
+            // }
+
+            .pad {
+                background: aliceblue;
+                border-radius: 10px;
+            }
+
+            .card-details {
+                padding: 25px 23px 20px 23px;
+                // .card-title{
+                //     font-weight: 700;
+                //     font-size: 24px;
+                //     line-height: 114.3%;
+                //     color: #282832;
+                //     max-width: 364px;
+                // }
+                .card-written {
+                    color: #7E7E84;
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-family:AR;
+                    margin-top: 14px;
+
+                    .date {
+                        float: right;
+                        color: #282832;
+                    }
+                }
+            }
+        }
+
+            &:nth-child(n+3) {
+                width: 25%;
+                flex: 0 0 25%;
+                max-width: 25%;
+                margin-top: 42px;
+
+                @include mq($until: tablet) {
+                    max-width:50%;
+                    flex: 0 0 50%;
+                }
+
+                @include mq($until: tabletSmallincld) {
+                    max-width:100%;
+                    flex: 0 0 100%;
+                }
+                
+
+                .card-title{
+                    font-size: 18px;
+                    line-height: 114.3%;
+                    color: #282832;
+                    font-family: 'AB';
+                }
+
+                .card-details{
+                    padding: 17px 15px 20px 23px;
+
+                }
+            }
+        }
+    }
+}

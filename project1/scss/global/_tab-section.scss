@@ -1,0 +1,41 @@
+.tab-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    align-items: center;
+    @include mq($until: tablet) {
+        flex-direction: column;
+    }
+    
+    ul {
+        display: flex;
+        list-style: none;
+
+        li a {
+            margin-right: 10px;
+            color: #000;
+            text-decoration: none;
+            border: 1px solid #282832;
+            border-radius: 37px;
+            padding: 7px 17px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+    }
+
+      .search input#fname {
+        border: 1px solid #282832;
+        filter: drop-shadow(0px 2px 4px rgba(33, 36, 56, 0.1));
+        border-radius: 30px;
+        width: 417px;
+        height: 42px;
+        padding: 6px 20px;
+        // width: 100%;
+
+
+        @include mq($until: tablet) {
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+}
